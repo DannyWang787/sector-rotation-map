@@ -170,8 +170,7 @@ const DAY=864e5;
 const $=id=>document.getElementById(id);
 const store={get(k){try{return JSON.parse(localStorage.getItem(k))}catch(e){return null}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v));return true}catch(e){return false}},del(k){try{localStorage.removeItem(k)}catch(e){}}};
 
-const SNAPSHOT={asof:"2026-11-12",fetched:"2026-11-13",csv:`Date,SPY,XLK,XLF,XLI,XLE,XLV,XLY,XLP,XLC,XLB,XLU,XLRE
-2025-10-09,671.16,145.10,53.32,153.29,43.88,144.19,117.61,78.04,114.92,44.34,45.28,41.13
+const SNAPSHOT={asof:"2026-11-12",fetched:"2026-11-14",csv:`Date,SPY,XLK,XLF,XLI,XLE,XLV,XLY,XLP,XLC,XLB,XLU,XLRE
 2025-10-10,653.02,139.19,52.16,149.90,42.61,142.11,114.38,78.10,112.80,43.42,45.10,40.68
 2025-10-13,663.04,142.59,52.66,151.46,43.19,141.95,116.93,77.84,113.84,44.12,45.45,40.91
 2025-10-14,662.23,140.75,53.24,153.24,43.19,142.34,117.17,79.09,114.59,44.55,45.85,41.30
