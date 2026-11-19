@@ -170,8 +170,7 @@ const DAY=864e5;
 const $=id=>document.getElementById(id);
 const store={get(k){try{return JSON.parse(localStorage.getItem(k))}catch(e){return null}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v));return true}catch(e){return false}},del(k){try{localStorage.removeItem(k)}catch(e){}}};
 
-const SNAPSHOT={asof:"2026-11-17",fetched:"2026-11-18",csv:`Date,SPY,XLK,XLF,XLI,XLE,XLV,XLY,XLP,XLC,XLB,XLU,XLRE
-2025-10-14,662.23,140.75,53.24,153.24,43.19,142.34,117.17,79.09,114.59,44.55,45.85,41.30
+const SNAPSHOT={asof:"2026-11-18",fetched:"2026-11-19",csv:`Date,SPY,XLK,XLF,XLI,XLE,XLV,XLY,XLP,XLC,XLB,XLU,XLRE
 2025-10-15,665.17,142.15,53.24,152.60,43.16,142.56,117.34,79.23,115.40,44.35,46.45,41.90
 2025-10-16,660.64,142.25,51.76,151.60,42.64,142.32,116.21,78.68,114.17,44.02,45.95,41.77
 2025-10-17,664.39,142.50,52.18,151.73,42.99,143.27,117.21,79.73,114.94,43.94,45.78,42.04
@@ -446,7 +445,8 @@ const SNAPSHOT={asof:"2026-11-17",fetched:"2026-11-18",csv:`Date,SPY,XLK,XLF,XLI
 2026-11-12,757.12,173.77,58.21,169.44,64.33,187.83,120.46,91.06,107.56,52.34,43.81,44.36
 2026-11-13,754.37,170.28,58.68,168.78,64.96,188.85,119.98,92.35,108.69,52.23,44.04,44.37
 2026-11-16,739.95,164.76,58.18,165.66,63.69,187.88,118.15,92.60,106.82,51.47,44.12,44.25
-2026-11-17,732.44,163.26,57.07,164.75,63.36,185.24,117.10,91.46,105.26,50.84,43.42,43.59`};
+2026-11-17,732.44,163.26,57.07,164.75,63.36,185.24,117.10,91.46,105.26,50.84,43.42,43.59
+2026-11-18,730.20,163.81,56.42,164.66,61.29,181.17,119.20,91.18,105.58,50.46,43.55,43.62`};
 /* ---------- sample data (deterministic, clearly synthetic) ---------- */
 function mulberry(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
 function gauss(r){let u=0,v=0;while(!u)u=r();while(!v)v=r();return Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*v)}
